@@ -15,21 +15,21 @@ const meetings: Meeting[] = [
     title: 'Q2 Planning Review',
     date: '2024-02-15',
     time: '10:00 AM',
-    participants: ['John Smith', 'Sarah Johnson', 'Mike Chen'],
+    participants: ['Rahul Sharma', 'Priya Patel', 'Amit Singh'],
   },
   {
     id: '2',
     title: 'Team Sync',
     date: '2024-02-16',
     time: '2:00 PM',
-    participants: ['Alex Wong', 'Emily Brown'],
+    participants: ['Anjali Gupta', 'Vikram Joshi'],
   },
   {
     id: '3',
     title: 'Budget Discussion',
     date: '2024-02-19',
     time: '11:30 AM',
-    participants: ['David Miller', 'Lisa Anderson', 'Tom Wilson'],
+    participants: ['Sneha Reddy', 'Arjun Kapoor', 'Neha Desai'],
   },
 ];
 
@@ -95,20 +95,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     borderBottomWidth: 1,
     borderBottomColor: '#e5e5e5',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: '#1a1a1a',
-  },
-  listContainer: {
-    padding: 16,
-  },
-  meetingCard: {
-    backgroundColor: '#ffffff',
-    borderRadius: 12,
-    padding: 16,
-    marginBottom: 16,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -118,6 +104,29 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 3,
   },
+  title: {
+    fontSize: 28,
+    fontWeight: '700',
+    color: '#1a1a1a',
+    textAlign: 'center',
+  },
+  listContainer: {
+    padding: 16,
+  },
+  meetingCard: {
+    backgroundColor: '#ffffff',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 16,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 5,
+  },
   meetingHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -125,7 +134,7 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   meetingTitle: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: '600',
     color: '#333333',
   },
